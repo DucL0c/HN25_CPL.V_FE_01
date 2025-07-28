@@ -1,5 +1,5 @@
 import './App.css'
-import React, { type JSX } from 'react'
+import { type JSX } from 'react'
 
 const PRODUCTS = [
   { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
