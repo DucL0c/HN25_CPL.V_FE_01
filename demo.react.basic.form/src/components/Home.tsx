@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="card">
       <h1>React Form Demo - Vite + TypeScript</h1>
-      <p>Chọn một demo để xem các kiến thức về form trong React:</p>
+
 
       <ul className="nav-list">
         <li>

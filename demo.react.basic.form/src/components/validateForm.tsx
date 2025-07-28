@@ -40,7 +40,6 @@ function MyValidateForm() {
       console.log("Name:", name, "Email:", email)
       setSubmitted(true)
 
-      // Reset form after 3 seconds
       setTimeout(() => {
         setName("")
         setEmail("")
@@ -52,7 +51,6 @@ function MyValidateForm() {
 
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value)
-    // Clear error when user starts typing
     if (errors.name) {
       setErrors((prev) => ({ ...prev, name: undefined }))
     }
@@ -60,7 +58,6 @@ function MyValidateForm() {
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value)
-    // Clear error when user starts typing
     if (errors.email) {
       setErrors((prev) => ({ ...prev, email: undefined }))
     }
